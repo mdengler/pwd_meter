@@ -1,5 +1,5 @@
 body {
-    color: #000;
+    color: #000000;
     font-family: Verdana,'Trebuchet MS','Lucida Grande', Arial, sans-serif;
     font-size: .8em;
     line-height: 1.25em;
@@ -241,7 +241,6 @@ a:hover, a:active
     border-bottom: 1px solid;
 }
 #header {
-background:url(../images/top.gif) top repeat-x;
 height:145px;
 margin:0;
 padding:0;
@@ -275,7 +274,6 @@ font-size:1.3em;
 #navigation a:link,
 #navigation a:visited
 {
-    background:#FFF url(../images/active1.gif) left bottom no-repeat;
     color:#fff;
     height:24px;
     margin-right:2px;
@@ -302,7 +300,6 @@ font-size:1.3em;
 }
 #navigation a:hover
 {
-    background:url(../images/active1.gif) left bottom no-repeat;
     color:#040;
     height:24px;
     padding-left:12px;
@@ -312,7 +309,6 @@ font-size:1.3em;
 #navigation .current_page_item a:link,
 #navigation .current_page_item a:visited
 {
-    background:#FFF url(../images/current1.gif) left bottom no-repeat;
     color:#fff;
     height:27px;
     line-height:24px;
@@ -323,7 +319,6 @@ font-size:1.3em;
 }
 #navigation .current_page_item a:hover
 {
-    background:#FFF url(../images/current1.gif) left bottom no-repeat;
     color:#AAC8E0;
     height:27px;
     margin-right:2px;
@@ -341,7 +336,6 @@ font-size:1.3em;
 #navigation a:visited span,
 #navigation a:hover span
 {
-    background:url(../images/active2.gif) right bottom no-repeat;
     height:24px;
     padding-right:12px;
     border:none;
@@ -350,13 +344,11 @@ font-size:1.3em;
 #navigation .current_page_item a:visited span,
 #navigation .current_page_item a:hover span
 {
-    background:url(../images/current2.gif) right bottom no-repeat;
     height:27px;
     padding-right:15px;
     border:none;
 }
 #footer {
-    background:#223344 url(../images/top.gif) bottom repeat-x;
     clear: both;
     height: 60px;
     padding: 10px;
