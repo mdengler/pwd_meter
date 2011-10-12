@@ -6,33 +6,32 @@
 <link href="css/default.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" language="javascript" src="js/pwd_meter_min.js"></script>
 <!--[if lt IE 7]>
-	<link href="css/ie.css" rel="stylesheet" type="text/css" />
+    <link href="css/ie.css" rel="stylesheet" type="text/css" />
 <![endif]-->
 </head>
 <body>
-	<div id="header">
-		<div id="logo">
-			<h1 id="blogname"><a href="http://passwordmeter.com">The Password Meter</a></h1>
-		</div>
-		<div>
-			<ul id="navigation">
-				<li class="current_page_item"><a href="http://passwordmeter.com" title="Home"><span>Home</span></a></li>
-				<li class="current_page_item"><a href="http://blogs.passwordmeter.com" title="Home"><span>Feed</span></a></li>
-			</ul>
-		</div>
-	</div>
-	<div id="content">
+    <div id="header">
+        <div id="logo">
+            <h1 id="blogname"><a href="http://martindengler.com">The Password Meter</a></h1>
+        </div>
+        <div>
+            <ul id="navigation">
+                <li class="current_page_item"><a href="http://martindengler.com" title="Home"><span>Home</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
         <form id="formPassword" name="formPassword">
             <table id="tablePwdCheck" cellpadding="5" cellspacing="1" border="0">
-            	<tr>
-                	<th colspan="2" class="txtCenter">Test Your Password</th>
+                <tr>
+                    <th colspan="2" class="txtCenter">Test Your Password</th>
                     <th class="txtCenter">Minimum Requirements</th>
                </tr>
                <tr>
                     <th>Password:</th>
                     <td>
-                    	<input type="password" id="passwordPwd" name="passwordPwd" autocomplete="off" onkeyup="chkPass(this.value);" />
-						<input type="text" id="passwordTxt" name="passwordTxt" autocomplete="off" onkeyup="chkPass(this.value);" class="hide" />
+                        <input type="password" id="passwordPwd" name="passwordPwd" autocomplete="off" onkeyup="chkPass(this.value);" />
+                        <input type="text" id="passwordTxt" name="passwordTxt" autocomplete="off" onkeyup="chkPass(this.value);" class="hide" />
                     </td>
                     <td rowspan="4">
                         <ul>
@@ -79,7 +78,7 @@
                     <td width="1%" class="txtCenter italic">+(n*4)</td>
                     <td width="1%"><div id="nLength" class="box">&nbsp;</div></td>
                     <td width="1%"><div id="nLengthBonus" class="boxPlus">&nbsp;</div></td>
-                </tr>	
+                </tr>
                 <tr>
                     <td><div id="div_nAlphaUC" class="fail">&nbsp;</div></td>
                     <td>Uppercase Letters</td>
@@ -87,7 +86,7 @@
                     <td nowrap="nowrap" class="txtCenter italic">+((len-n)*2)</td>
                    <td><div id="nAlphaUC" class="box">&nbsp;</div></td>
                     <td><div id="nAlphaUCBonus" class="boxPlus">&nbsp;</div></td>
-                </tr>	
+                </tr>
                 <tr>
                     <td><div id="div_nAlphaLC" class="fail">&nbsp;</div></td>
                     <td>Lowercase Letters</td>
@@ -131,70 +130,70 @@
                 <tr>
                     <th colspan="6">Deductions</th>
                 </tr>
-				<tr>
+                <tr>
                     <td width="1%"><div id="div_nAlphasOnly" class="pass">&nbsp;</div></td>
                     <td width="94%">Letters Only</td>
                     <td width="1%" class="txtCenter">Flat</td>
                     <td width="1%" class="txtCenter italic">-n</td>
                     <td width="1%"><div id="nAlphasOnly" class="box">&nbsp;</div></td>
                     <td width="1%"><div id="nAlphasOnlyBonus" class="boxMinus">&nbsp;</div></td>
-				</tr>	
-				<tr>
+                </tr>
+                <tr>
                     <td><div id="div_nNumbersOnly" class="pass">&nbsp;</div></td>
                     <td>Numbers Only</td>
                     <td class="txtCenter">Flat</td>
                     <td class="txtCenter italic">-n</td>
                     <td><div id="nNumbersOnly" class="box">&nbsp;</div></td>
                     <td><div id="nNumbersOnlyBonus" class="boxMinus">&nbsp;</div></td>
-				</tr>	
-				<tr>
+                </tr>
+                <tr>
                     <td><div id="div_nRepChar" class="pass">&nbsp;</div></td>
                     <td>Repeat Characters (Case Insensitive)</td>
                     <td class="txtCenter">Incr</td>
                     <td nowrap="nowrap" class="txtCenter italic">-(n(n-1))</td>
                     <td><div id="nRepChar" class="box">&nbsp;</div></td>
                     <td><div id="nRepCharBonus" class="boxMinus">&nbsp;</div></td>
-				</tr>	
-				<tr>
+                </tr>
+                <tr>
                     <td><div id="div_nConsecAlphaUC" class="pass">&nbsp;</div></td>
                     <td>Consecutive Uppercase Letters</td>
                     <td class="txtCenter">Flat</td>
                     <td class="txtCenter italic">-(n*2)</td>
                     <td><div id="nConsecAlphaUC" class="box">&nbsp;</div></td>
                     <td><div id="nConsecAlphaUCBonus" class="boxMinus">&nbsp;</div></td>
-				</tr>	
-				<tr>
+                </tr>
+                <tr>
                     <td><div id="div_nConsecAlphaLC" class="pass">&nbsp;</div></td>
                     <td>Consecutive Lowercase Letters</td>
                     <td class="txtCenter">Flat</td>
                     <td class="txtCenter italic">-(n*2)</td>
                     <td><div id="nConsecAlphaLC" class="box">&nbsp;</div></td>
                     <td><div id="nConsecAlphaLCBonus" class="boxMinus">&nbsp;</div></td>
-				</tr>	
-				<tr>
+                </tr>
+                <tr>
                     <td><div id="div_nConsecNumber" class="pass">&nbsp;</div></td>
                     <td>Consecutive Numbers</td>
                     <td class="txtCenter">Flat</td>
                     <td class="txtCenter italic">-(n*2)</td>
                     <td><div id="nConsecNumber" class="box">&nbsp;</div></td>
                     <td><div id="nConsecNumberBonus" class="boxMinus">&nbsp;</div></td>
-				</tr>	
-				<tr>
+                </tr>
+                <tr>
                     <td><div id="div_nSeqAlpha" class="pass">&nbsp;</div></td>
                     <td>Sequential Letters (3+)</td>
                     <td class="txtCenter">Flat</td>
                     <td class="txtCenter italic">-(n*3)</td>
                     <td><div id="nSeqAlpha" class="box">&nbsp;</div></td>
                     <td><div id="nSeqAlphaBonus" class="boxMinus">&nbsp;</div></td>
-				</tr>	
-				<tr>
+                </tr>
+                <tr>
                     <td><div id="div_nSeqNumber" class="pass">&nbsp;</div></td>
                     <td>Sequential Numbers (3+)</td>
                     <td class="txtCenter">Flat</td>
                     <td class="txtCenter italic">-(n*3)</td>
                     <td><div id="nSeqNumber" class="box">&nbsp;</div></td>
                     <td><div id="nSeqNumberBonus" class="boxMinus">&nbsp;</div></td>
-				</tr>	
+                </tr>
                 <tr>
                     <th colspan="6">Legend</th>
                 </tr>
@@ -208,52 +207,52 @@
                         </ul>
                     </td>
                 </tr>
-			</table>
+            </table>
            <table id="tablePwdNotes" cellpadding="5" cellspacing="1" border="0">
                 <tr>
                     <th>Quick Footnotes</th>
                 </tr>
                 <tr>
                     <td>
-						&bull; <strong>Flat:</strong> Rates that add/remove in non-changing increments.<br />
-						&bull; <strong>Incr:</strong> Rates that add/remove in adjusting increments.<br />
-						&bull; <strong>Cond:</strong> Rates that add/remove depending on additional factors.<br />
-						&bull; <strong>n:</strong> Refers to the total number of occurrences.<br />
-						&bull; <strong>len:</strong> Refers to the total password length.<br />
-                    	&bull; Additional bonus scores are given for increased character variety.<br />
+                        &bull; <strong>Flat:</strong> Rates that add/remove in non-changing increments.<br />
+                        &bull; <strong>Incr:</strong> Rates that add/remove in adjusting increments.<br />
+                        &bull; <strong>Cond:</strong> Rates that add/remove depending on additional factors.<br />
+                        &bull; <strong>n:</strong> Refers to the total number of occurrences.<br />
+                        &bull; <strong>len:</strong> Refers to the total password length.<br />
+                        &bull; Additional bonus scores are given for increased character variety.<br />
                         &bull; Final score is a cumulative result of all bonuses minus deductions.<br />
                         &bull; Final score is capped with a minimum of 0 and a maximum of 100.<br />
-                    	&bull; Score and Complexity ratings are not conditional on meeting minimum requirements.<br />
-					</td>
+                        &bull; Score and Complexity ratings are not conditional on meeting minimum requirements.<br />
+                    </td>
                 </tr>
                 <tr>
                     <th>DISCLAIMER</th>
                 </tr>
                 <tr>
                     <td>
-						<p>This application is designed to assess the strength of password strings.  The instantaneous visual feedback provides the user a means to improve the strength of their passwords, with a hard focus on breaking the typical bad habits of faulty password formulation.  Since no official weighting system exists, we created our own formulas to assess the overall strength of a given password.  Please note, that this application does not utilize the typical "days-to-crack" approach for strength determination.  We have found that particular system to be severely lacking and unreliable for real-world scenarios.  This application is neither perfect nor foolproof, and should only be utilized as a loose guide in determining methods for improving the password creation process. </p>
-					</td>
+                        <p>This application is designed to assess the strength of password strings.  The instantaneous visual feedback provides the user a means to improve the strength of their passwords, with a hard focus on breaking the typical bad habits of faulty password formulation.  Since no official weighting system exists, we created our own formulas to assess the overall strength of a given password.  Please note, that this application does not utilize the typical "days-to-crack" approach for strength determination.  We have found that particular system to be severely lacking and unreliable for real-world scenarios.  This application is neither perfect nor foolproof, and should only be utilized as a loose guide in determining methods for improving the password creation process. </p>
+                    </td>
                 </tr>
                 <tr>
                     <td>
 
-						<div align="center"><a href="http://github.com/mdengler/pwd_meter.git" title="Download Password Meter Package">Download Password Meter Package</a></div>
-					
-					</td>
+                        <div align="center"><a href="http://github.com/mdengler/pwd_meter.git" title="Download Password Meter Package">Download Password Meter Package</a></div>
+
+                    </td>
                 </tr>
-			</table>
+            </table>
        </form>
-		<div class="xtend">&nbsp;</div>
-	</div>
-	<div id="footer">
-		<div class="txtRight txtSmall noPad">v.1.03 (rev.082707)</div>
-		<p class="txtCenter txtSmall">This software is freely available for distribution under the <a href="http://www.gnu.org/licenses/gpl-3.0.txt" target="_blank">GNU General Public License (GPL)</a>.</p>
-	</div>        
+        <div class="xtend">&nbsp;</div>
+    </div>
+    <div id="footer">
+        <div class="txtRight txtSmall noPad">v.1.03 (rev.082707)</div>
+        <p class="txtCenter txtSmall">This software is freely available for distribution under the <a href="http://www.gnu.org/licenses/gpl-3.0.txt" target="_blank">GNU General Public License (GPL)</a>.</p>
+    </div>
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
 </script>
 <script type="text/javascript">
 _uacct = "UA-2236431-1";
 urchinTracker();
-</script>	
+</script>
 </body>
 </html>
